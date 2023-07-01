@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">नाणे अॅप कंपोझ न करता स्वच्छ आर्किटेक्चर</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">हॅलो रिक्त तुकडा</string>
+</resources>

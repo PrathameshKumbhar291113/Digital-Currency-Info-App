@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">कॉइन ऐप बिना कंपोज़ के क्लीन आर्किटेक्चर</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">नमस्कार रिक्त अंश</string>
+</resources>
