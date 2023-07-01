@@ -1,6 +1,6 @@
-package com.coinappcleanarchitecture.domain.model
+package com.coinappcleanarchitecture.network.model
 
-import com.coinappcleanarchitecture.data.data_source.model.GetAllCoinListResponse
+import com.coinappcleanarchitecture.network.dto.GetAllCoinListResponse
 
 data class Coins(
 

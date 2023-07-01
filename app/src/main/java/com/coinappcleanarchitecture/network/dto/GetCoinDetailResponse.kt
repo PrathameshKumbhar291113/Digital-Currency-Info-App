@@ -1,7 +1,7 @@
-package com.coinappcleanarchitecture.data.data_source.model
+package com.coinappcleanarchitecture.network.dto
 
 
-import com.coinappcleanarchitecture.domain.model.CoinDetail
+import com.coinappcleanarchitecture.network.model.CoinDetail
 import com.google.gson.annotations.SerializedName
 
 data class GetCoinDetailResponse(

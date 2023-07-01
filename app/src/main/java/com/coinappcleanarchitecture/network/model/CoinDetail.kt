@@ -1,4 +1,4 @@
-package com.coinappcleanarchitecture.domain.model
+package com.coinappcleanarchitecture.network.model
 
 data class CoinDetail(
     var coingeckoRank: Int?,

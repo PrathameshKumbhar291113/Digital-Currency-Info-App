@@ -1,7 +1,8 @@
 package com.coinappcleanarchitecture.domain.repository
 
-import com.coinappcleanarchitecture.data.data_source.model.GetAllCoinListResponse
-import com.coinappcleanarchitecture.data.data_source.model.GetCoinDetailResponse
+import com.coinappcleanarchitecture.network.dto.GetAllCoinListResponse
+import com.coinappcleanarchitecture.network.dto.GetCoinDetailResponse
+import retrofit2.http.GET
 
 interface CoinRepository {
 

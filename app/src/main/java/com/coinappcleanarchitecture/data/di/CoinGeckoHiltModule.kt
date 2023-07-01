@@ -1,9 +1,9 @@
-package com.coinappcleanarchitecture.di
+package com.coinappcleanarchitecture.data.di
 
-import com.coinappcleanarchitecture.data.data_source.CoinGeckoApiService
+import com.coinappcleanarchitecture.network.CoinGeckoApiService
 import com.coinappcleanarchitecture.data.repository.CoinRepositoryImpl
 import com.coinappcleanarchitecture.domain.repository.CoinRepository
-import com.coinappcleanarchitecture.util.Constants
+import com.coinappcleanarchitecture.common.util.Constants
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -18,7 +18,7 @@ object CoinGeckoHiltModule {
 
     @Provides
     @Singleton
-    fun provideCoinGeckoApi(): CoinGeckoApiService{
+    fun provideCoinGeckoApi(): CoinGeckoApiService {
         return Retrofit.Builder()
             .baseUrl(Constants.API_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
@@ -31,6 +31,6 @@ object CoinGeckoHiltModule {
     fun provideCoinGeckoRepository(
         apiService: CoinGeckoApiService
     ): CoinRepository{
-        return CoinRepositoryImpl(apiService)
+        return CoinRepositoryImpl(coinApi = apiService)
     }
 }

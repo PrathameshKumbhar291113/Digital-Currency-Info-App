@@ -22,7 +22,7 @@
             android:name=".presentation.coindetail.ui.CoinDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".presentation.splash_screen.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">

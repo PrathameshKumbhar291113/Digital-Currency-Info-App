@@ -1,7 +1,7 @@
-package com.coinappcleanarchitecture.data.data_source
+package com.coinappcleanarchitecture.network
 
-import com.coinappcleanarchitecture.data.data_source.model.GetAllCoinListResponse
-import com.coinappcleanarchitecture.data.data_source.model.GetCoinDetailResponse
+import com.coinappcleanarchitecture.network.dto.GetAllCoinListResponse
+import com.coinappcleanarchitecture.network.dto.GetCoinDetailResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query
@@ -12,6 +12,6 @@ interface CoinGeckoApiService {
     suspend fun getAllCoins(@Query("page") page : String) : GetAllCoinListResponse
 
 
-    @GET("/api/v3/coins/{id}")
+    @GET("api/v3/coins/{id}")
     suspend fun getCoinDetail(@Path("id") id: String) : GetCoinDetailResponse
 }

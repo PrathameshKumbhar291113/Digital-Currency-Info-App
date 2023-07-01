@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashActivity">
+    android:background="@color/white"
+    tools:context=".presentation.splash_screen.SplashActivity">
 
     <ImageView
         android:id="@+id/splashImg"
@@ -12,7 +13,8 @@
         android:layout_height="0dp"
         android:scaleType="centerCrop"
         app:layout_constraintDimensionRatio="1:1"
-        android:src="@drawable/splash_screen_gif"
+        android:src="@drawable/splashscreengif"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,8 +1,8 @@
 package com.coinappcleanarchitecture.data.repository
 
-import com.coinappcleanarchitecture.data.data_source.CoinGeckoApiService
-import com.coinappcleanarchitecture.data.data_source.model.GetAllCoinListResponse
-import com.coinappcleanarchitecture.data.data_source.model.GetCoinDetailResponse
+import com.coinappcleanarchitecture.network.CoinGeckoApiService
+import com.coinappcleanarchitecture.network.dto.GetAllCoinListResponse
+import com.coinappcleanarchitecture.network.dto.GetCoinDetailResponse
 import com.coinappcleanarchitecture.domain.repository.CoinRepository
 import javax.inject.Inject
 

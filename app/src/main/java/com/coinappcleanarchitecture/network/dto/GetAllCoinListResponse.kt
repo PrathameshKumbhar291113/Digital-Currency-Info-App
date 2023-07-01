@@ -1,7 +1,7 @@
-package com.coinappcleanarchitecture.data.data_source.model
+package com.coinappcleanarchitecture.network.dto
 
 
-import com.coinappcleanarchitecture.domain.model.Coins
+import com.coinappcleanarchitecture.network.model.Coins
 import com.google.gson.annotations.SerializedName
 
 class GetAllCoinListResponse : ArrayList<GetAllCoinListResponse.GetAllCoinsItem>() {

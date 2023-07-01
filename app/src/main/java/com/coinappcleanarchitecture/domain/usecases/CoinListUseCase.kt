@@ -1,8 +1,8 @@
 package com.coinappcleanarchitecture.domain.usecases
 
-import com.coinappcleanarchitecture.domain.model.Coins
+import com.coinappcleanarchitecture.network.model.Coins
 import com.coinappcleanarchitecture.domain.repository.CoinRepository
-import com.coinappcleanarchitecture.util.NetworkResponseState
+import com.coinappcleanarchitecture.common.util.NetworkResponseState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
